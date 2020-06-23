@@ -15,8 +15,9 @@ const Adventure = ({ data }) => {
         </Helmet>
 
         <h1>{post.frontmatter.title}</h1>
+        <h2>{post.frontmatter.description}</h2>
         <br />
-        <div dangerouslySetInnerHTML={{ __html: post.frontmatter.body }} />
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </section>
     </Layout>
   );
