@@ -1,6 +1,7 @@
-import Layout from '../components/layout';
+import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql } from 'gatsby';
+import Layout from '../components/layout';
 
 const Adventure = ({ data }) => {
   const { markdownRemark: post } = data;
@@ -31,7 +32,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
-        body
       }
     }
   }

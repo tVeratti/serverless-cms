@@ -5,13 +5,17 @@ module.exports = {
     author: `@tatianaveratti`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `adventures`,
+        path: `${__dirname}/content/adventures`,
       },
+    },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {},
     },
     {
       resolve: `gatsby-plugin-manifest`,

@@ -6,9 +6,9 @@ backend:
   public_folder: /img
   
   collections:
-    - name: "adventure"
+    - name: "adventures"
       label: "Adventure"
-      folder: "content/adventure"
+      folder: "content/adventures"
       create: true
       slug: "{{slug}}"
       fields:
