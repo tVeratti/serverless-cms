@@ -1,18 +1,23 @@
 backend:
-    name: git-gateway
-    branch: base
-  
-  media_folder: static/img
-  public_folder: /img
-  
-  collections:
-    - name: "adventures"
-      label: "Adventure"
-      folder: "content/adventures"
-      create: true
-      slug: "{{slug}}"
-      fields:
-        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "adventure" }
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Description", name: "description", widget: "text"}
-        - {label: "Body", name: "body", widget: "markdown"}
+  name: git-gateway
+  branch: base
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: 'adventures'
+    label: 'Adventure'
+    folder: 'content/adventures'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'adventure',
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
