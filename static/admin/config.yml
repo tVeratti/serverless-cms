@@ -12,6 +12,7 @@ backend:
       create: true
       slug: "{{slug}}"
       fields:
+        - {label: "Template Key", name: "templateKey", widget: "hidden", default: "adventure" }
         - {label: "Title", name: "title", widget: "string"}
+        - {label: "Description", name: "description", widget: "text"}
         - {label: "Body", name: "body", widget: "markdown"}
-        - {label: "Tags", name: "tags", widget: "list"}
